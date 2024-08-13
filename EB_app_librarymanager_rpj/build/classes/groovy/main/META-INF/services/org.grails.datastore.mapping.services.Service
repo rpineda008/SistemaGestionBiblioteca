@@ -1,0 +1,4 @@
+mx.ebc.$AuthorServiceImplementation
+mx.ebc.$BookServiceImplementation
+mx.ebc.$PrestamoServiceImplementation
+mx.ebc.$UserServiceImplementation

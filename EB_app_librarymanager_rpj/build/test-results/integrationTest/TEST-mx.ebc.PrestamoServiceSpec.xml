@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mx.ebc.PrestamoServiceSpec" tests="5" skipped="0" failures="5" errors="0" timestamp="2024-08-13T09:38:14" hostname="REC-LAP-AD-3024" time="0.033">
+  <properties/>
+  <testcase name="test get" classname="mx.ebc.PrestamoServiceSpec" time="0.005">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.PrestamoServiceSpec.setupData(PrestamoServiceSpec.groovy:22)
+	at app//mx.ebc.PrestamoServiceSpec.$tt__$spock_feature_0_0(PrestamoServiceSpec.groovy:27)
+	at mx.ebc.PrestamoServiceSpec.test get_closure1(PrestamoServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.PrestamoServiceSpec.test get(PrestamoServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test list" classname="mx.ebc.PrestamoServiceSpec" time="0.007">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.PrestamoServiceSpec.setupData(PrestamoServiceSpec.groovy:22)
+	at app//mx.ebc.PrestamoServiceSpec.$tt__$spock_feature_0_1(PrestamoServiceSpec.groovy:34)
+	at mx.ebc.PrestamoServiceSpec.test list_closure2(PrestamoServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.PrestamoServiceSpec.test list(PrestamoServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test count" classname="mx.ebc.PrestamoServiceSpec" time="0.006">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.PrestamoServiceSpec.setupData(PrestamoServiceSpec.groovy:22)
+	at app//mx.ebc.PrestamoServiceSpec.$tt__$spock_feature_0_2(PrestamoServiceSpec.groovy:45)
+	at mx.ebc.PrestamoServiceSpec.test count_closure3(PrestamoServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.PrestamoServiceSpec.test count(PrestamoServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test delete" classname="mx.ebc.PrestamoServiceSpec" time="0.005">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.PrestamoServiceSpec.setupData(PrestamoServiceSpec.groovy:22)
+	at app//mx.ebc.PrestamoServiceSpec.$tt__$spock_feature_0_3(PrestamoServiceSpec.groovy:52)
+	at mx.ebc.PrestamoServiceSpec.test delete_closure4(PrestamoServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.PrestamoServiceSpec.test delete(PrestamoServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test save" classname="mx.ebc.PrestamoServiceSpec" time="0.004">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a valid instance to save&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a valid instance to save
+
+	at app//mx.ebc.PrestamoServiceSpec.$tt__$spock_feature_0_4(PrestamoServiceSpec.groovy:67)
+	at mx.ebc.PrestamoServiceSpec.test save_closure5(PrestamoServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.PrestamoServiceSpec.test save(PrestamoServiceSpec.groovy)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

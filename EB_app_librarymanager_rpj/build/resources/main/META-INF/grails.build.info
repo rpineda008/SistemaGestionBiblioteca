@@ -1,0 +1,6 @@
+#Tue, 13 Aug 2024 04:17:02 -0500
+
+info.app.version=0.1
+info.app.name=EB_app_librarymanager_rpj
+grails.env=test
+info.app.grailsVersion=5.3.6

@@ -1,0 +1,1642 @@
+Š2024-08-13 04:27:46.612 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+
+$java.io.IOException: Stream closed
+J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+4	at java.base/java.io.Reader.read(Reader.java:229)
+F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+^	at grails.testing.web.GrailsWebUnitTest$Trait$Helper.getParams(GrailsWebUnitTest.groovy:90)
+X	at grails.testing.web.GrailsWebUnitTest$Trait$Helper$getParams$8.call(Unknown Source)
+H	at mx.ebc.AuthorControllerSpec.getParams(AuthorControllerSpec.groovy)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+y	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:85)
+r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+V	at mx.ebc.AuthorControllerSpec.$spock_feature_0_10(AuthorControllerSpec.groovy:166)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Š2024-08-13 04:27:46.628 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+
+$java.io.IOException: Stream closed
+J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+4	at java.base/java.io.Reader.read(Reader.java:229)
+F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+w	at org.grails.web.mime.HttpServletResponseExtension.getMimeTypesFormatAware(HttpServletResponseExtension.groovy:184)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+}	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.callGetProperty(GetEffectivePogoPropertySite.java:48)
+g	at grails.artefact.controller.RestResponder$Trait$Helper.getResponseFormat(RestResponder.groovy:255)
+e	at grails.artefact.controller.RestResponder$Trait$Helper.internalRespond(RestResponder.groovy:150)
+\	at grails.artefact.controller.RestResponder$Trait$Helper.respond(RestResponder.groovy:83)
+Z	at grails.artefact.controller.RestResponder$Trait$Helper$respond$1.call(Unknown Source)
+>	at mx.ebc.AuthorController.respond(AuthorController.groovy)
+R	at grails.artefact.controller.RestResponder$respond.callCurrent(Unknown Source)
+b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+@	at mx.ebc.AuthorController.update(AuthorController.groovy:60)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+U	at mx.ebc.AuthorController_$$_jvst215_0.update(AuthorController_$$_jvst215_0.java)
+;	at mx.ebc.AuthorController$update$4.call(Unknown Source)
+[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+V	at mx.ebc.AuthorControllerSpec.$spock_feature_0_11(AuthorControllerSpec.groovy:188)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Š2024-08-13 04:27:47.093 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+
+$java.io.IOException: Stream closed
+J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+4	at java.base/java.io.Reader.read(Reader.java:229)
+F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+S	at grails.web.api.WebAttributes$Trait$Helper.getParams(WebAttributes.groovy:127)
+P	at grails.web.api.WebAttributes$Trait$Helper$getParams$0.call(Unknown Source)
+<	at mx.ebc.BookController.getParams(BookController.groovy)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+D	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1956)
+J	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1150)
+D	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3843)
+J	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1162)
+@	at groovy.lang.GroovyObject.getProperty(GroovyObject.java:50)
+S	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+?	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+A	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:314)
+7	at groovy.lang.Closure.getProperty(Closure.java:304)
+S	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+?	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+A	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:314)
+7	at groovy.lang.Closure.getProperty(Closure.java:304)
+g	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+Z	at mx.ebc.BookController$_notFound_closure4$_closure11.doCall(BookController.groovy:93)
+W	at mx.ebc.BookController$_notFound_closure4$_closure11.doCall(BookController.groovy)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+d	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+E	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+0	at groovy.lang.Closure.call(Closure.java:412)
+0	at groovy.lang.Closure.call(Closure.java:406)
+i	at org.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+f	at org.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+^	at org.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+g	at org.grails.web.mime.HttpServletRequestExtension.withFormat(HttpServletRequestExtension.groovy:45)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+„	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoMetaMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:226)
+^	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+>	at mx.ebc.BookController.notFound(BookController.groovy:91)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+p	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+†	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+e	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+<	at mx.ebc.BookController.update(BookController.groovy:53)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+Q	at mx.ebc.BookController_$$_jvst215_1.update(BookController_$$_jvst215_1.java)
+9	at mx.ebc.BookController$update$4.call(Unknown Source)
+[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+Q	at mx.ebc.BookControllerSpec.$spock_feature_0_9(BookControllerSpec.groovy:149)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Š2024-08-13 04:27:47.093 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+
+$java.io.IOException: Stream closed
+J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+4	at java.base/java.io.Reader.read(Reader.java:229)
+F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+^	at grails.testing.web.GrailsWebUnitTest$Trait$Helper.getParams(GrailsWebUnitTest.groovy:90)
+X	at grails.testing.web.GrailsWebUnitTest$Trait$Helper$getParams$8.call(Unknown Source)
+D	at mx.ebc.BookControllerSpec.getParams(BookControllerSpec.groovy)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+y	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:85)
+r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+R	at mx.ebc.BookControllerSpec.$spock_feature_0_10(BookControllerSpec.groovy:166)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Š2024-08-13 04:27:47.109 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+
+$java.io.IOException: Stream closed
+J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+4	at java.base/java.io.Reader.read(Reader.java:229)
+F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+w	at org.grails.web.mime.HttpServletResponseExtension.getMimeTypesFormatAware(HttpServletResponseExtension.groovy:184)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+}	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.callGetProperty(GetEffectivePogoPropertySite.java:48)
+g	at grails.artefact.controller.RestResponder$Trait$Helper.getResponseFormat(RestResponder.groovy:255)
+e	at grails.artefact.controller.RestResponder$Trait$Helper.internalRespond(RestResponder.groovy:150)
+\	at grails.artefact.controller.RestResponder$Trait$Helper.respond(RestResponder.groovy:83)
+Z	at grails.artefact.controller.RestResponder$Trait$Helper$respond$1.call(Unknown Source)
+:	at mx.ebc.BookController.respond(BookController.groovy)
+R	at grails.artefact.controller.RestResponder$respond.callCurrent(Unknown Source)
+b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+<	at mx.ebc.BookController.update(BookController.groovy:60)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+Q	at mx.ebc.BookController_$$_jvst215_1.update(BookController_$$_jvst215_1.java)
+9	at mx.ebc.BookController$update$4.call(Unknown Source)
+[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+R	at mx.ebc.BookControllerSpec.$spock_feature_0_11(BookControllerSpec.groovy:188)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+$-Š2024-08-13 04:27:47.528 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+$-
+$-$java.io.IOException: Stream closed
+$-J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+$-D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+$-4	at java.base/java.io.Reader.read(Reader.java:229)
+$-F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+$-3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+$-R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+$-^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+$-X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+$-V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+$-S	at grails.web.api.WebAttributes$Trait$Helper.getParams(WebAttributes.groovy:127)
+$-P	at grails.web.api.WebAttributes$Trait$Helper$getParams$0.call(Unknown Source)
+$-D	at mx.ebc.PrestamoController.getParams(PrestamoController.groovy)
+$-L	at jdk.internal.reflect.GeneratedMethodAccessor113.invoke(Unknown Source)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+$-@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+$-D	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1956)
+$-J	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1150)
+$-D	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3843)
+$-J	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1162)
+$-@	at groovy.lang.GroovyObject.getProperty(GroovyObject.java:50)
+$-S	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+$-?	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+$-A	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:314)
+$-7	at groovy.lang.Closure.getProperty(Closure.java:304)
+$-S	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+$-?	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+$-A	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:314)
+$-7	at groovy.lang.Closure.getProperty(Closure.java:304)
+$-g	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+$-r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+$-b	at mx.ebc.PrestamoController$_notFound_closure4$_closure11.doCall(PrestamoController.groovy:93)
+$-_	at mx.ebc.PrestamoController$_notFound_closure4$_closure11.doCall(PrestamoController.groovy)
+$-T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$-f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+$-@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+$-d	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+$-E	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+$-0	at groovy.lang.Closure.call(Closure.java:412)
+$-0	at groovy.lang.Closure.call(Closure.java:406)
+$-i	at org.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+$-f	at org.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+$-^	at org.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+$-g	at org.grails.web.mime.HttpServletRequestExtension.withFormat(HttpServletRequestExtension.groovy:45)
+$-T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$-f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+$-g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+$-„	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoMetaMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:226)
+$-^	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
+$-[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+$-F	at mx.ebc.PrestamoController.notFound(PrestamoController.groovy:91)
+$-T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$-f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-p	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+$-†	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+$-e	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+$-b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+$-b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+$-b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+$-D	at mx.ebc.PrestamoController.update(PrestamoController.groovy:53)
+$-T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$-f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+$-Y	at mx.ebc.PrestamoController_$$_jvst215_2.update(PrestamoController_$$_jvst215_2.java)
+$-=	at mx.ebc.PrestamoController$update$4.call(Unknown Source)
+$-[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+$-[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+$-[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+$-Y	at mx.ebc.PrestamoControllerSpec.$spock_feature_0_9(PrestamoControllerSpec.groovy:149)
+$-T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$-f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+$-R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+$-M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$-Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$-W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$-a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+$-M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+$-U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+$-U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+$-k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$-J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$-U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+$-{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+$-M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$-Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$-W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$-]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+$-L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+$-]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+$-J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$-Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+$-y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+$-M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$-Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$-W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$-[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+$-H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+$-T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+$-T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$-k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$-k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$-_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$-@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+$-›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+$-k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$-J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$-K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+$-u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+$-M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$-Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$-W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$-W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+$-B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+$-B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$-k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$-k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$-_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$-@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+$-›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+$-k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$-O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+$-t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$-k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$-k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$-_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$-˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+$-w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+$-s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+$-p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+$-o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+$-x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+$-~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+$-o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+$-X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+$-W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+$-x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+$-k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+$-¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+$-«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+$-‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+$-i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+$-T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$-f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$-n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$-@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$-Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+$-Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+$-j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+$-y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+$-0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+$-X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+$-o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+$-Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+$-Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+$-k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+$-ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+$-‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+$-^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+$-_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+$-
+$.Š2024-08-13 04:27:47.528 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+$.
+$.$java.io.IOException: Stream closed
+$.J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+$.D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+$.4	at java.base/java.io.Reader.read(Reader.java:229)
+$.F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+$.3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+$.R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+$.^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+$.X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+$.V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+$.^	at grails.testing.web.GrailsWebUnitTest$Trait$Helper.getParams(GrailsWebUnitTest.groovy:90)
+$.X	at grails.testing.web.GrailsWebUnitTest$Trait$Helper$getParams$8.call(Unknown Source)
+$.L	at mx.ebc.PrestamoControllerSpec.getParams(PrestamoControllerSpec.groovy)
+$.T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$.f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$.n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$.@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$.O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+$.@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+$.€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+$.y	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:85)
+$.r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+$.Z	at mx.ebc.PrestamoControllerSpec.$spock_feature_0_10(PrestamoControllerSpec.groovy:166)
+$.T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$.f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$.n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$.@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$.R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+$.R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+$.M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$.Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$.W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$.a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+$.M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+$.U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+$.U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+$.k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$.J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$.U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+$.{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+$.M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$.Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$.W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$.]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+$.L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+$.]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+$.J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$.Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+$.y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+$.M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$.Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$.W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$.[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+$.H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+$.T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+$.T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$.k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$.k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$._	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$.@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+$.›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+$.k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$.J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$.K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+$.u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+$.M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$.Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$.W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$.W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+$.B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+$.B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$.k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$.k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$._	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$.@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+$.›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+$.k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$.O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+$.t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$.k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$.k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$._	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$.˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+$.w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+$.s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+$.p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+$.o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+$.x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+$.~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+$.o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+$.X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+$.W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+$.x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+$.k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+$.¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+$.«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+$.‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+$.i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+$.T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$.f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$.n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$.@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$.Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+$.Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+$.j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+$.y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+$.0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+$.X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+$.o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+$.Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+$.Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+$.k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+$.ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+$.‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+$.^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+$._	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+$.
+$/Š2024-08-13 04:27:47.544 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+$/
+$/$java.io.IOException: Stream closed
+$/J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+$/D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+$/4	at java.base/java.io.Reader.read(Reader.java:229)
+$/F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+$/3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+$/R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+$/^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+$/X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+$/V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+$/w	at org.grails.web.mime.HttpServletResponseExtension.getMimeTypesFormatAware(HttpServletResponseExtension.groovy:184)
+$/L	at jdk.internal.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+$/n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$/@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$/e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+$/g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+$/@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+$/€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+$/}	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.callGetProperty(GetEffectivePogoPropertySite.java:48)
+$/g	at grails.artefact.controller.RestResponder$Trait$Helper.getResponseFormat(RestResponder.groovy:255)
+$/e	at grails.artefact.controller.RestResponder$Trait$Helper.internalRespond(RestResponder.groovy:150)
+$/\	at grails.artefact.controller.RestResponder$Trait$Helper.respond(RestResponder.groovy:83)
+$/Z	at grails.artefact.controller.RestResponder$Trait$Helper$respond$1.call(Unknown Source)
+$/B	at mx.ebc.PrestamoController.respond(PrestamoController.groovy)
+$/R	at grails.artefact.controller.RestResponder$respond.callCurrent(Unknown Source)
+$/b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+$/b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+$/b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+$/D	at mx.ebc.PrestamoController.update(PrestamoController.groovy:60)
+$/T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$/f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$/n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$/@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$/p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+$/Y	at mx.ebc.PrestamoController_$$_jvst215_2.update(PrestamoController_$$_jvst215_2.java)
+$/=	at mx.ebc.PrestamoController$update$4.call(Unknown Source)
+$/[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+$/[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+$/[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+$/Z	at mx.ebc.PrestamoControllerSpec.$spock_feature_0_11(PrestamoControllerSpec.groovy:188)
+$/T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$/f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$/n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$/@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$/R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+$/R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+$/M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$/Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$/W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$/a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+$/M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+$/U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+$/U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+$/k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$/J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$/U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+$/{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+$/M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$/Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$/W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$/]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+$/L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+$/]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+$/J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$/Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+$/y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+$/M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$/Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$/W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$/[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+$/H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+$/T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+$/T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$/k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$/k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$/_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$/@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+$/›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+$/k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$/J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+$/K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+$/u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+$/M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+$/Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+$/W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+$/W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+$/B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+$/B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$/k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$/k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$/_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$/@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+$/›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+$/k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+$/O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+$/t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+$/k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+$/k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+$/_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+$/˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+$/w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+$/s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+$/p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+$/o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+$/x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+$/~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+$/o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+$/X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+$/W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+$/x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+$/k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+$/¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+$/«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+$/‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+$/i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+$/T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+$/f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+$/n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+$/@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+$/Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+$/Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+$/j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+$/y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+$/0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+$/X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+$/o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+$/Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+$/Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+$/k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+$/ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+$/‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+$/^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+$/_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+$/
+5>Š2024-08-13 04:27:48.011 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+5>
+5>$java.io.IOException: Stream closed
+5>J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+5>D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+5>4	at java.base/java.io.Reader.read(Reader.java:229)
+5>F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+5>3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+5>R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+5>^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+5>X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+5>V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+5>S	at grails.web.api.WebAttributes$Trait$Helper.getParams(WebAttributes.groovy:127)
+5>P	at grails.web.api.WebAttributes$Trait$Helper$getParams$0.call(Unknown Source)
+5><	at mx.ebc.UserController.getParams(UserController.groovy)
+5>L	at jdk.internal.reflect.GeneratedMethodAccessor113.invoke(Unknown Source)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+5>@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+5>D	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1956)
+5>J	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1150)
+5>D	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3843)
+5>J	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1162)
+5>@	at groovy.lang.GroovyObject.getProperty(GroovyObject.java:50)
+5>S	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+5>?	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+5>A	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:314)
+5>7	at groovy.lang.Closure.getProperty(Closure.java:304)
+5>S	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+5>?	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+5>A	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:314)
+5>7	at groovy.lang.Closure.getProperty(Closure.java:304)
+5>g	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+5>r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+5>Z	at mx.ebc.UserController$_notFound_closure4$_closure11.doCall(UserController.groovy:93)
+5>W	at mx.ebc.UserController$_notFound_closure4$_closure11.doCall(UserController.groovy)
+5>T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5>f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+5>@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+5>d	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+5>E	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+5>0	at groovy.lang.Closure.call(Closure.java:412)
+5>0	at groovy.lang.Closure.call(Closure.java:406)
+5>i	at org.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+5>f	at org.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+5>^	at org.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+5>g	at org.grails.web.mime.HttpServletRequestExtension.withFormat(HttpServletRequestExtension.groovy:45)
+5>T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5>f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+5>g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+5>„	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoMetaMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:226)
+5>^	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
+5>[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+5>>	at mx.ebc.UserController.notFound(UserController.groovy:91)
+5>T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5>f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>p	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+5>†	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+5>e	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+5>b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+5>b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+5>b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+5><	at mx.ebc.UserController.update(UserController.groovy:53)
+5>T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5>f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+5>Q	at mx.ebc.UserController_$$_jvst215_3.update(UserController_$$_jvst215_3.java)
+5>9	at mx.ebc.UserController$update$4.call(Unknown Source)
+5>[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+5>[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+5>[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+5>Q	at mx.ebc.UserControllerSpec.$spock_feature_0_9(UserControllerSpec.groovy:149)
+5>T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5>f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+5>R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+5>M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5>Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5>W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5>a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+5>M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+5>U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+5>U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+5>k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5>J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5>U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+5>{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+5>M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5>Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5>W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5>]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+5>L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+5>]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+5>J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5>Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+5>y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+5>M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5>Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5>W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5>[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+5>H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+5>T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+5>T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5>k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5>k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5>_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5>@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+5>›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+5>k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5>J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5>K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+5>u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+5>M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5>Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5>W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5>W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+5>B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+5>B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5>k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5>k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5>_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5>@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+5>›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+5>k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5>O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+5>t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5>k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5>k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5>_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5>˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+5>w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+5>s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+5>p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+5>o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+5>x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+5>~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+5>o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+5>X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+5>W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+5>x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+5>k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+5>¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+5>«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+5>‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+5>i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+5>T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5>f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5>n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5>@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5>Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+5>Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+5>j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+5>y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+5>0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+5>X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+5>o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+5>Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+5>Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+5>k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+5>ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+5>‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+5>^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+5>_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+5>
+5?Š2024-08-13 04:27:48.011 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+5?
+5?$java.io.IOException: Stream closed
+5?J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+5?D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+5?4	at java.base/java.io.Reader.read(Reader.java:229)
+5?F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+5?3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+5?R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+5?^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+5?X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+5?V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+5?^	at grails.testing.web.GrailsWebUnitTest$Trait$Helper.getParams(GrailsWebUnitTest.groovy:90)
+5?X	at grails.testing.web.GrailsWebUnitTest$Trait$Helper$getParams$8.call(Unknown Source)
+5?D	at mx.ebc.UserControllerSpec.getParams(UserControllerSpec.groovy)
+5?T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5?f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5?n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5?@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5?O	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+5?@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+5?€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+5?y	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.getProperty(GetEffectivePogoPropertySite.java:85)
+5?r	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+5?R	at mx.ebc.UserControllerSpec.$spock_feature_0_10(UserControllerSpec.groovy:166)
+5?T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5?f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5?n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5?@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5?R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+5?R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+5?M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5?Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5?W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5?a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+5?M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+5?U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+5?U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+5?k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5?J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5?U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+5?{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+5?M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5?Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5?W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5?]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+5?L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+5?]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+5?J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5?Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+5?y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+5?M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5?Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5?W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5?[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+5?H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+5?T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+5?T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5?k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5?k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5?_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5?@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+5?›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+5?k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5?J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5?K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+5?u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+5?M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5?Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5?W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5?W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+5?B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+5?B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5?k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5?k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5?_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5?@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+5?›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+5?k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5?O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+5?t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5?k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5?k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5?_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5?˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+5?w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+5?s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+5?p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+5?o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+5?x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+5?~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+5?o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+5?X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+5?W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+5?x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+5?k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+5?¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+5?«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+5?‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+5?i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+5?T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5?f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5?n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5?@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5?Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+5?Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+5?j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+5?y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+5?0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+5?X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+5?o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+5?Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+5?Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+5?k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+5?ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+5?‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+5?^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+5?_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+5?
+5@Š2024-08-13 04:27:48.027 ERROR --- [    Test worker] g.web.servlet.mvc.GrailsParameterMap     : Error processing form encoded PUT request
+5@
+5@$java.io.IOException: Stream closed
+5@J	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+5@D	at java.base/java.io.BufferedReader.read(BufferedReader.java:279)
+5@4	at java.base/java.io.Reader.read(Reader.java:229)
+5@F	at org.grails.io.support.SpringIOUtils.copy(SpringIOUtils.java:318)
+5@3	at grails.io.IOUtils.toString(IOUtils.groovy:70)
+5@R	at grails.web.servlet.mvc.GrailsParameterMap.<init>(GrailsParameterMap.java:92)
+5@^	at org.grails.web.servlet.mvc.GrailsWebRequest.getOriginalParams(GrailsWebRequest.java:255)
+5@X	at org.grails.web.servlet.mvc.GrailsWebRequest.resetParams(GrailsWebRequest.java:264)
+5@V	at org.grails.web.servlet.mvc.GrailsWebRequest.getParams(GrailsWebRequest.java:245)
+5@w	at org.grails.web.mime.HttpServletResponseExtension.getMimeTypesFormatAware(HttpServletResponseExtension.groovy:184)
+5@L	at jdk.internal.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+5@n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5@@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5@e	at org.codehaus.groovy.runtime.metaclass.ReflectionMetaMethod.invoke(ReflectionMetaMethod.java:54)
+5@g	at org.codehaus.groovy.runtime.metaclass.NewInstanceMetaMethod.invoke(NewInstanceMetaMethod.java:54)
+5@@	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+5@€	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+5@}	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.callGetProperty(GetEffectivePogoPropertySite.java:48)
+5@g	at grails.artefact.controller.RestResponder$Trait$Helper.getResponseFormat(RestResponder.groovy:255)
+5@e	at grails.artefact.controller.RestResponder$Trait$Helper.internalRespond(RestResponder.groovy:150)
+5@\	at grails.artefact.controller.RestResponder$Trait$Helper.respond(RestResponder.groovy:83)
+5@Z	at grails.artefact.controller.RestResponder$Trait$Helper$respond$1.call(Unknown Source)
+5@:	at mx.ebc.UserController.respond(UserController.groovy)
+5@R	at grails.artefact.controller.RestResponder$respond.callCurrent(Unknown Source)
+5@b	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+5@b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+5@b	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+5@<	at mx.ebc.UserController.update(UserController.groovy:60)
+5@T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5@f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5@n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5@@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5@p	at org.grails.testing.runtime.support.ActionSettingMethodHandler.invoke(ActionSettingMethodHandler.groovy:29)
+5@Q	at mx.ebc.UserController_$$_jvst215_3.update(UserController_$$_jvst215_3.java)
+5@9	at mx.ebc.UserController$update$4.call(Unknown Source)
+5@[	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+5@[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+5@[	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+5@R	at mx.ebc.UserControllerSpec.$spock_feature_0_11(UserControllerSpec.groovy:188)
+5@T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5@f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5@n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5@@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5@R	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:198)
+5@R	at org.spockframework.runtime.model.MethodInfo.lambda$new$0(MethodInfo.java:47)
+5@M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5@Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5@W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5@a	at org.spockframework.runtime.PlatformSpecRunner.runFeatureMethod(PlatformSpecRunner.java:324)
+5@M	at org.spockframework.runtime.IterationNode.execute(IterationNode.java:48)
+5@U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:58)
+5@U	at org.spockframework.runtime.SimpleFeatureNode.execute(SimpleFeatureNode.java:15)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+5@k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5@J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5@U	at org.spockframework.runtime.IterationNode.lambda$around$0(IterationNode.java:63)
+5@{	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunIteration$5(PlatformSpecRunner.java:236)
+5@M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5@Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5@W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5@]	at org.spockframework.runtime.PlatformSpecRunner.runIteration(PlatformSpecRunner.java:218)
+5@L	at org.spockframework.runtime.IterationNode.around(IterationNode.java:63)
+5@]	at org.spockframework.runtime.SimpleFeatureNode.lambda$around$0(SimpleFeatureNode.java:52)
+5@J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5@Q	at org.spockframework.runtime.FeatureNode.lambda$around$0(FeatureNode.java:29)
+5@y	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunFeature$4(PlatformSpecRunner.java:199)
+5@M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5@Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5@W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5@[	at org.spockframework.runtime.PlatformSpecRunner.runFeature(PlatformSpecRunner.java:192)
+5@H	at org.spockframework.runtime.FeatureNode.around(FeatureNode.java:29)
+5@T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:52)
+5@T	at org.spockframework.runtime.SimpleFeatureNode.around(SimpleFeatureNode.java:15)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5@k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5@k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5@_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5@@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+5@›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+5@k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5@J	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+5@K	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+5@u	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+5@M	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:148)
+5@Z	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+5@W	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+5@W	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+5@B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+5@B	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5@k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5@k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5@_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5@@	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+5@›	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+5@k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+5@O	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+5@t	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+5@k	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+5@k	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+5@_	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+5@˜	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+5@w	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+5@s	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+5@p	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+5@o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+5@x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+5@~	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+5@o	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+5@X	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+5@W	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+5@x	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+5@k	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+5@¶	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+5@«	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+5@‡	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+5@i	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+5@T	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+5@f	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+5@n	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5@@	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+5@Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+5@Z	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+5@j	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+5@y	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+5@0	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+5@X	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+5@o	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+5@Z	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+5@Y	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+5@k	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+5@ƒ	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+5@‚	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+5@^	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+5@_	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+5@

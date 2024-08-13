@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mx.ebc.AuthorSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-08-13T09:27:46" hostname="REC-LAP-AD-3024" time="0.009">
+  <properties/>
+  <testcase name="test something" classname="mx.ebc.AuthorSpec" time="0.009">
+    <failure message="Condition not satisfied:&#10;&#10;true == false&#10;     |&#10;     false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+true == false
+     |
+     false
+
+	at mx.ebc.AuthorSpec.test something(AuthorSpec.groovy:16)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

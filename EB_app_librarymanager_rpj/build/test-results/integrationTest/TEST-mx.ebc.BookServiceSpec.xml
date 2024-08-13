@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mx.ebc.BookServiceSpec" tests="5" skipped="0" failures="5" errors="0" timestamp="2024-08-13T09:38:13" hostname="REC-LAP-AD-3024" time="0.042">
+  <properties/>
+  <testcase name="test get" classname="mx.ebc.BookServiceSpec" time="0.006">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.BookServiceSpec.setupData(BookServiceSpec.groovy:22)
+	at app//mx.ebc.BookServiceSpec.$tt__$spock_feature_0_0(BookServiceSpec.groovy:27)
+	at mx.ebc.BookServiceSpec.test get_closure1(BookServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.BookServiceSpec.test get(BookServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test list" classname="mx.ebc.BookServiceSpec" time="0.008">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.BookServiceSpec.setupData(BookServiceSpec.groovy:22)
+	at app//mx.ebc.BookServiceSpec.$tt__$spock_feature_0_1(BookServiceSpec.groovy:34)
+	at mx.ebc.BookServiceSpec.test list_closure2(BookServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.BookServiceSpec.test list(BookServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test count" classname="mx.ebc.BookServiceSpec" time="0.007">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.BookServiceSpec.setupData(BookServiceSpec.groovy:22)
+	at app//mx.ebc.BookServiceSpec.$tt__$spock_feature_0_2(BookServiceSpec.groovy:45)
+	at mx.ebc.BookServiceSpec.test count_closure3(BookServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.BookServiceSpec.test count(BookServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test delete" classname="mx.ebc.BookServiceSpec" time="0.005">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a setupData() implementation for this generated test suite&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a setupData() implementation for this generated test suite
+
+	at app//mx.ebc.BookServiceSpec.setupData(BookServiceSpec.groovy:22)
+	at app//mx.ebc.BookServiceSpec.$tt__$spock_feature_0_3(BookServiceSpec.groovy:52)
+	at mx.ebc.BookServiceSpec.test delete_closure4(BookServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.BookServiceSpec.test delete(BookServiceSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="test save" classname="mx.ebc.BookServiceSpec" time="0.006">
+    <failure message="Condition not satisfied:&#10;&#10;false&#10;&#10;TODO: Provide a valid instance to save&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+false
+
+TODO: Provide a valid instance to save
+
+	at app//mx.ebc.BookServiceSpec.$tt__$spock_feature_0_4(BookServiceSpec.groovy:67)
+	at mx.ebc.BookServiceSpec.test save_closure5(BookServiceSpec.groovy)
+	at app//groovy.lang.Closure.call(Closure.java:412)
+	at app//groovy.lang.Closure.call(Closure.java:428)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:68)
+	at app//org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at app//grails.gorm.transactions.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:65)
+	at mx.ebc.BookServiceSpec.test save(BookServiceSpec.groovy)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
